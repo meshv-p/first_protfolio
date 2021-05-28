@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-.body{
-    height: 70vh;
-    margin-top: .3rem;
-    scroll-behavior: smooth;
+body{
     font-family: 'Lora', serif;
-    /* font-size: 10rem; */
+    scroll-behavior: smooth;
 }
 
 h3{
@@ -18,7 +16,6 @@ h3{
     font-size: 2.8rem;
 }
 #io{
-    margin-left: -.7rem;
     color: red;
 }
 
@@ -98,15 +95,16 @@ h5{
 .card{
     background-color: #dcdcd3;
     height: 65vh;
-
+    border-radius: 10px;
 }
 .border{
     width: 99vw;
     height: 26.875rem;   /*43vh*/
     /* margin: 47rem 3rem; */
     background-color: #948f878c;
+    border-radius: 10px;
     position: relative;
-    top: -8.3rem;
+    top: -4.2rem;
     z-index: 1;
 }
 
@@ -176,8 +174,12 @@ a{
     font-size: 1.8rem;
     /* border: 2rem solid red; */
     width: 80vw;
-    height: 19vh;
+    height: 19vh; 
     margin-bottom: 1.6rem;
+    margin-top: 2.7rem;
+}
+header{
+    height: 10rem;
 }
 
 h4{
@@ -190,7 +192,7 @@ h4{
     font-weight: bold;
     margin-bottom: .8rem;
 }
-#hr1{
+.hr1{
     width: 10vw;
     margin-left: 37%;
     display: inline-block;
@@ -199,18 +201,24 @@ h4{
     border: .1rem solid black;
     margin-bottom: 1.6rem;
 }
-b{
+.b{
     text-align: center;
     position: relative;
     top: -1.0rem;
+    margin-left: 0.4rem;
     font-size: 1.4rem;
     text-shadow: silver .4rem .1rem .1rem;
 }
+.b1{
+    margin-left: 1.4rem;
+}
+.b1{
+    margin-left: 1.2rem;
+}
 
-
-#hr2{
+.hr2{
     width: 10vw;
-    margin-left: 53%;
+    margin-left: 55%;
     display: inline-block;
     position: relative;
     top: -3.7rem;
@@ -222,9 +230,9 @@ b{
 
 .bor{
     /* border: 2rem solid red; */
-    background-color: #f6e6cb;
+    background-color: #f6e6cb;  
     height: 24.975rem;
-    
+    border-radius: 10px;
 }
 
 .edu {                  /* for educa heading */
@@ -280,6 +288,9 @@ b{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+#header{
+    margin-top: 1rem;
+}
 #hr31{
     width: 10vw;
     margin-left: 37%;
@@ -314,64 +325,59 @@ b{
 
 }
 
-@media (max-width:700px) {
-    /* body{
-         font-size: 9rem;
-    } */
-     #me{
-        display: none;
-    } 
-    .right{
-        display: none;
-    } 
-    html{
-        font-size: 20%;
-    }
-    .me{
-        height: 23vh;
-    }
-    header{
-        height: 4.4px;
-    }
-    .border{
-        top: -4.3rem ;
-    }
-    .work{
-        margin-top: 2.3rem;
-    }
-    #hr1,#hr2,#hr21,#hr22,#hr31,#hr32{
-        border-bottom: none;
-
-    }
-    #hr21{
-        top: 2.3rem;
-    }
-    #e{
-        top: 1.4rem;
-        margin-left: .5rem;
-    }
-    #hr22{
-        top: -1rem;
-        margin-left: 56.4%;
-    }
-    #hr31{
-        z-index: 52;
-        top: 3.7rem;
-    }
-    #hr32{
-        margin-left: 55.8%;
-        top: -1.2rem;
-    }
-    #pro{
-        top: 1.1rem;
-        margin-left: 3.5rem;
-    }
-    .card{
-        height: 40vh;
-    }
-}
-@media (max-width:400px) {
-    #hr2{
-        margin-left: 54%;
-    }
+@media  (max-width:50rem) {
+        #me{
+            display: none;
+        }
+        html{
+            font-size: 30%;
+        }
+        .hr1{
+            margin-left: 35%;
+            border-bottom: none;
+        }
+        .hr2{
+            margin-left: 61% ;
+            border-bottom: none;
+        }
+        .right{
+            /* display: none; */
+            width: 51vw;
+            height: 25vh;
+            /* border: 1px solid red; */
+            margin: auto 16rem;
+            top: -7.3rem;
+        }
+        .news{
+            width: 28rem;
+        }
+        #News{
+            top: 8%;
+            left: -6.3rem;
+            width: 30rem;
+        }
+        .myself{
+            margin-left: 8rem;
+        }
+        .border{
+            border: 2px solid green;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 50vh;
+        }
+        .ed{
+            margin-left: 8rem;
+        }
+        .card{
+            height: 67vh;
+            margin-top: .1rem;
+            /* border: 1px solid red; */
+        }
+        .left{
+            top: -17.2rem;
+        }
+        .des{
+            margin-top: -3.5rem;
+            margin-left: 6rem;
+        }
 }
